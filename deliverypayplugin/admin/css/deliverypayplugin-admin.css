@@ -1,0 +1,107 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider.round{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.round.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .round.slider{
+    background-color: #2196F3;
+}
+
+input:focus + .round.slider{
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .round.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round{
+    border-radius: 34px;
+}
+
+.slider.round:before{
+    border-radius: 50%;
+}
+
+tr.close{
+    display:none;
+}
+
+.range_options_wrapper.close,.cyprus_range_options_wrapper.close{
+    display:none;
+}
+.cod_input{
+    border-radius:10px;
+}
+.btn{
+    background: #008ec2;
+    border-color: #006799;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.inputs-for-range-wrapper{
+    display:flex;
+}
+
+.cod-table{
+    border:1px solid #ddd;
+    border-spacing:0;
+}
+.cod-table td{
+    border-bottom:1px solid #ddd;
+    border-right:1px solid #ddd;
+    text-align:center;
+}
+.cod-table th{
+    border-bottom:1px solid #ddd;
+    border-right:1px solid #ddd;
+    text-align:center;
+    color:white;
+    background-color: #008ec2;
+}
+
+.cod-table tbody{
+    border-spacing: 0;
+}
